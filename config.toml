@@ -1,0 +1,8 @@
+baseURL = "https://emergency.neverfapdeluxe.com/"
+title = "NeverFap Deluxe Emergency | Get Immediate Help With Your Porn Addiction."
+languageCode = "en-us"
+theme = "emergency_theme"
+
+enableRobotsTXT = true
+canonifyURLs = true
+googleAnalytics = "UA-132863786-4"

@@ -1,0 +1,397 @@
+@import "_global.scss";
+@import "_main.scss";
+@import "_banner.scss";
+@import "_plyr.scss";
+
+// // templates
+// @import "_header.scss";
+// @import "_account_info.scss";
+// @import "_box_info.scss";
+// @import "_breadcrumbs.scss";
+// @import "_footer.scss";
+
+// // pages
+// @import "_homepage.scss";
+// @import "_courses.scss";
+// @import "_single.scss";
+// @import "_page.scss";
+
+// // components
+// @import "_posts.scss";
+// @import "_five_principles.scss";
+// @import "_button.scss";
+
+// // miscellaneous
+// @import "_javascript.scss";
+// @import "_form.scss";
+// @import "_shortcodes.scss";
+
+.emergency__main {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .emergency__main__top {
+    position: relative;
+    display: flex;
+    // height: 100%;
+  }
+
+  .emergency__main__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.emergency__main__bottom__item--selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  color: black;
+
+  width: 100%;
+  cursor: pointer;
+
+  transition: .15s;
+}
+
+.emergency__main__bottom__item {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid white;
+  color: black;
+  width: 100%;
+  cursor: pointer;
+  transition: .15s;
+  .emergency__main__bottom__item:nth-child(1) {    
+    flex: 1;
+  }
+  
+  .emergency__main__bottom__item:nth-child(2) {
+    flex: 1;
+  }
+  
+  .emergency__main__bottom__item:nth-child(3) {
+    flex: 1;
+  }
+  
+}
+
+.emergency__main__bottom__item--title {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+.emergency__main__bottom__item:hover {
+  background: cyan;
+  color: white;
+  text-shadow: -4px 4px black;
+}
+
+.emergency__main__bottom__item--selected:hover {
+  box-shadow: -5px 5px 0px 0px cyan;
+  text-shadow: -4px 4px cyan;
+}
+
+// MEDITATE
+.emergency__main__top__left {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background: -moz-linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,46,182,1)), color-stop(100%, rgba(227,152,2,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E39802', endColorstr='#FF2EB6',GradientType=1 ); /* ie6-9 */
+}
+
+.emergency__main__top__left--container {
+
+  .emergency__main__top__left--title {
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px cyan;
+    transition: text-shadow 8s;
+  }
+}
+
+.emergency__main__top__left:hover .emergency__main__top__left--title {
+  text-shadow: -5px 5px cyan;
+}
+
+// DO YOU NEED?
+.emergency__main__top__right {
+  display: none;
+
+  width: 200px;
+  border-left: 4px solid cyan;
+
+  .emergency__main__top__right__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    // border: 4px solid black;
+    border-bottom: 4px solid cyan;
+    transition: .15s;
+
+    .emergency__main__top__right__item--logo {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.4rem;
+    } 
+
+    .emergency__main__top__right__item--title {
+      color: black;
+      margin: 0!important;
+      padding: 2rem;
+    } 
+
+    .discord__logo {
+      width: 32px;
+      height: 32px;
+    }
+
+    .reddit__logo {
+      width: 26px;
+      height: 26px;
+    }
+
+    .nfd__logo {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .emergency__main__top__right__item:hover {
+    text-shadow: -3px 3px rgba(255,46,182,1);
+  }
+}
+
+.meditation__timer__container {
+  cursor: pointer;
+  position: absolute;
+  left: 0.9rem;
+  bottom: 0.9rem;
+  padding: 1rem;
+  background: white;
+  // border: 4px solid black;
+  box-shadow: -5px 5px 0px 0px cyan;
+  transition: box-shadow .2s;
+
+  .meditation__timer__container--timer {
+    font-size: 0.8rem;
+  }
+}
+
+.meditation__timer__container:hover { 
+  box-shadow: -5px 5px 0px 0px cyan;
+}
+
+.meditation__what__is__container {
+  cursor: pointer;
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  padding: 1rem;
+  background: white;
+  // border: 4px solid black;
+  box-shadow: -5px 5px 0px 0px cyan;
+  transition: box-shadow .2s;
+
+  .meditation__what__is__container--title {
+    font-size: 0.8rem;
+  }
+}
+
+.meditation__what__is__container:hover { 
+  box-shadow: -5px 5px 0px 0px cyan;
+}
+
+
+#heres__what__happened {
+}
+#heres__what__wont__work {
+
+}
+#heres__what__will {
+
+}
+
+#heres__what__happened__response {
+  display: none;
+}
+#heres__what__wont__work__response {
+  display: block;
+}
+#heres__what__will__response {
+  display: none;
+}
+
+.emergency__main__bottom__responses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .emergency__main__bottom__responses__item {
+    padding: 2rem;
+    width: 600px;
+
+    .emergency__main__bottom__responses__item--title {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      padding: 1rem;
+      text-decoration: underline cyan;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  .emergency__main__bottom__responses--buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .emergency__main__bottom__responses--button {
+      display: inline-block;
+      border: 2px solid black;
+      color: black;
+      padding: 1rem;
+      transition: box-shadow .15s;
+      cursor: pointer;
+
+      // margin-right: 1rem;
+
+      .emergency__main__bottom__responses--title {
+        margin: 0!important;
+      }
+    }
+    .emergency__main__bottom__responses--button:hover {
+      box-shadow: -3px 3px 0px 0px cyan;
+    }
+  }
+}
+
+.educate__yourself__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .educate__yourself__inner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  
+    .educate__yourself__container__item {
+      display: inline-block;
+      cursor: pointer;
+      color: black;
+
+      padding: 0.6rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      border: 4px solid black;
+      box-shadow: -5px 5px 0px 0px rgba(255,46,182,1);
+      transition: box-shadow .15s;
+
+      .educate__yourself__container__item--title {
+        margin: 0!important;
+      }
+    }
+
+    .educate__yourself__container__item:hover {
+      box-shadow: -8px 8px 0px 0px white;
+    }  
+  }
+}
+
+.emergency__footer {
+  margin-top: 4.2rem;
+  padding: 1rem;
+
+  border-top: 4px solid black;
+
+
+}
+
+
+@media screen and (min-width: 420px) {
+  .emergency__main__top__left--container {
+    .emergency__main__top__left--title {
+      font-size: 6rem;
+    }
+  }
+
+  .emergency__main__bottom__responses {    
+    .emergency__main__bottom__responses__item {
+      .emergency__main__bottom__responses__item--title {
+        font-size: 3rem;
+        line-height: 4.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emergency__main__top__left--container {
+    .emergency__main__top__left--title {
+      font-size: 8rem;
+    }
+  }
+
+  .emergency__main__bottom__item--title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .emergency__main__bottom__responses {    
+    .emergency__main__bottom__responses__item {
+      .emergency__main__bottom__responses__item--title {
+        font-size: 5.5rem;
+        line-height: 8rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .emergency__main__top__right {
+    display: flex;
+    flex-direction: column;
+  }
+}
