@@ -26,27 +26,27 @@
 // @import "_form.scss";
 // @import "_shortcodes.scss";
 
-.emergency__main {
+.tracker__main {
   height: 100vh;
 
   display: flex;
   flex-direction: column;
   width: 100%;
 
-  .emergency__main__top {
+  .tracker__main__top {
     position: relative;
     display: flex;
     // height: 100%;
   }
 
-  .emergency__main__bottom {
+  .tracker__main__bottom {
     display: flex;
     justify-content: space-between;
   }
 }
 
 
-.emergency__main__bottom__item--selected {
+.tracker__main__bottom__item--selected {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@
   transition: .15s;
 }
 
-.emergency__main__bottom__item {
+.tracker__main__bottom__item {
 
   display: flex;
   justify-content: center;
@@ -69,21 +69,21 @@
   width: 100%;
   cursor: pointer;
   transition: .15s;
-  .emergency__main__bottom__item:nth-child(1) {    
+  .tracker__main__bottom__item:nth-child(1) {    
     flex: 1;
   }
   
-  .emergency__main__bottom__item:nth-child(2) {
+  .tracker__main__bottom__item:nth-child(2) {
     flex: 1;
   }
   
-  .emergency__main__bottom__item:nth-child(3) {
+  .tracker__main__bottom__item:nth-child(3) {
     flex: 1;
   }
   
 }
 
-.emergency__main__bottom__item--title {
+.tracker__main__bottom__item--title {
   font-size: 1.2rem;
   line-height: 1.7rem;
   padding-left: 0.5rem;
@@ -91,19 +91,19 @@
 }
 
 
-.emergency__main__bottom__item:hover {
+.tracker__main__bottom__item:hover {
   background: cyan;
   color: white;
   text-shadow: -4px 4px black;
 }
 
-.emergency__main__bottom__item--selected:hover {
+.tracker__main__bottom__item--selected:hover {
   box-shadow: -5px 5px 0px 0px cyan;
   text-shadow: -4px 4px cyan;
 }
 
 // MEDITATE
-.emergency__main__top__left {
+.tracker__main__top__left {
   position: relative;
 
   display: flex;
@@ -120,9 +120,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E39802', endColorstr='#FF2EB6',GradientType=1 ); /* ie6-9 */
 }
 
-.emergency__main__top__left--container {
+.tracker__main__top__left--container {
 
-  .emergency__main__top__left--title {
+  .tracker__main__top__left--title {
     padding: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -133,18 +133,18 @@
   }
 }
 
-.emergency__main__top__left:hover .emergency__main__top__left--title {
+.tracker__main__top__left:hover .tracker__main__top__left--title {
   text-shadow: -5px 5px cyan;
 }
 
 // DO YOU NEED?
-.emergency__main__top__right {
+.tracker__main__top__right {
   display: none;
 
   width: 200px;
   border-left: 4px solid cyan;
 
-  .emergency__main__top__right__item {
+  .tracker__main__top__right__item {
     position: relative;
 
     display: flex;
@@ -156,13 +156,13 @@
     border-bottom: 4px solid cyan;
     transition: .15s;
 
-    .emergency__main__top__right__item--logo {
+    .tracker__main__top__right__item--logo {
       position: absolute;
       top: 0.4rem;
       right: 0.4rem;
     } 
 
-    .emergency__main__top__right__item--title {
+    .tracker__main__top__right__item--title {
       color: black;
       margin: 0!important;
       padding: 2rem;
@@ -183,7 +183,7 @@
       height: 26px;
     }
   }
-  .emergency__main__top__right__item:hover {
+  .tracker__main__top__right__item:hover {
     text-shadow: -3px 3px rgba(255,46,182,1);
   }
 }
@@ -248,16 +248,16 @@
   display: none;
 }
 
-.emergency__main__bottom__responses {
+.tracker__main__bottom__responses {
   display: flex;
   align-items: center;
   justify-content: center;
   
-  .emergency__main__bottom__responses__item {
+  .tracker__main__bottom__responses__item {
     padding: 2rem;
     width: 600px;
 
-    .emergency__main__bottom__responses__item--title {
+    .tracker__main__bottom__responses__item--title {
       font-size: 3rem;
       line-height: 4.5rem;
       margin-top: 4rem;
@@ -277,11 +277,11 @@
     }
   }
 
-  .emergency__main__bottom__responses--buttons {
+  .tracker__main__bottom__responses--buttons {
     display: flex;
     justify-content: space-between;
 
-    .emergency__main__bottom__responses--button {
+    .tracker__main__bottom__responses--button {
       display: inline-block;
       border: 2px solid black;
       color: black;
@@ -291,11 +291,11 @@
 
       // margin-right: 1rem;
 
-      .emergency__main__bottom__responses--title {
+      .tracker__main__bottom__responses--title {
         margin: 0!important;
       }
     }
-    .emergency__main__bottom__responses--button:hover {
+    .tracker__main__bottom__responses--button:hover {
       box-shadow: -3px 3px 0px 0px cyan;
     }
   }
@@ -339,7 +339,7 @@
   }
 }
 
-.emergency__footer {
+.tracker__footer {
   margin-top: 4.2rem;
   padding: 1rem;
 
@@ -350,15 +350,15 @@
 
 
 @media screen and (min-width: 420px) {
-  .emergency__main__top__left--container {
-    .emergency__main__top__left--title {
+  .tracker__main__top__left--container {
+    .tracker__main__top__left--title {
       font-size: 6rem;
     }
   }
 
-  .emergency__main__bottom__responses {    
-    .emergency__main__bottom__responses__item {
-      .emergency__main__bottom__responses__item--title {
+  .tracker__main__bottom__responses {    
+    .tracker__main__bottom__responses__item {
+      .tracker__main__bottom__responses__item--title {
         font-size: 3rem;
         line-height: 4.5rem;
       }
@@ -367,20 +367,20 @@
 }
 
 @media screen and (min-width: 768px) {
-  .emergency__main__top__left--container {
-    .emergency__main__top__left--title {
+  .tracker__main__top__left--container {
+    .tracker__main__top__left--title {
       font-size: 8rem;
     }
   }
 
-  .emergency__main__bottom__item--title {
+  .tracker__main__bottom__item--title {
     font-size: 2rem;
     line-height: 3rem;
   }
 
-  .emergency__main__bottom__responses {    
-    .emergency__main__bottom__responses__item {
-      .emergency__main__bottom__responses__item--title {
+  .tracker__main__bottom__responses {    
+    .tracker__main__bottom__responses__item {
+      .tracker__main__bottom__responses__item--title {
         font-size: 5.5rem;
         line-height: 8rem;
       }
@@ -390,7 +390,7 @@
 
 
 @media screen and (min-width: 1024px) {
-  .emergency__main__top__right {
+  .tracker__main__top__right {
     display: flex;
     flex-direction: column;
   }
